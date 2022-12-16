@@ -8,8 +8,8 @@ public class PublicThread {
 //    }
 
     public static void startThread() {
-        if (NbMcPlugin.getPropConfig("live_room.start", "").equals("true")) {
-            int port = Integer.parseInt(NbMcPlugin.getPropConfig("live_room.port"));
+        if (NbMcPlugin.getPropConfig("websocket.start", "").equals("true")) {
+            int port = Integer.parseInt(NbMcPlugin.getPropConfig("websocket.port"));
             new Thread(new MsgWebSocketServer(port)).start();
         }
     }

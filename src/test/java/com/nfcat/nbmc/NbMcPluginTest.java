@@ -15,7 +15,7 @@ public class NbMcPluginTest {
     public void propTest() {
         try (InputStream ci = getClass().getClassLoader().getResourceAsStream("config.properties")) {
             configProp.load(ci);
-            System.out.printf("ip:%s,port:%s%n", configProp.getProperty("live_room.ip"), configProp.getProperty("live_room.port"));
+            System.out.printf("ip:%s,port:%s%n", configProp.getProperty("live_room.ip"), configProp.getProperty("websocket.port"));
         } catch (Exception ex) {
             throw new RuntimeException(ex);
         }
