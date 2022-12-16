@@ -1,0 +1,22 @@
+name: Main
+version: '${project.version}'
+main: com.nfcat.nbmc.NbMcPlugin
+api-version: 1.15
+prefix: nbmc
+load: STARTUP
+authors: [ nfcat ]
+description: 我的世界插件-BUKKIT
+website: nfcat.com
+
+commands:
+  menu:
+    description: 命令执行 输入/menu 获取帮助
+    usage: /m 参数(?)
+    aliases:
+      - m
+  nf:
+    description: 命令执行 输入/menu 获取帮助
+    usage: /n 参数(?)
+    aliases:
+      - nfcat
+      - n
